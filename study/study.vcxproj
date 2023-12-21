@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h" />
+    <ClInclude Include="Cat.h" />
     <ClInclude Include="Class.h" />
     <ClInclude Include="Dog.h" />
     <ClInclude Include="General.h" />
+    <ClInclude Include="Pig.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>

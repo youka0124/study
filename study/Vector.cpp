@@ -1,4 +1,7 @@
 #include "Vector.h"
+#include "Dog.h"
+#include "Cat.h"
+#include "Pig.h"
 
 void Vector::test1() {
 
@@ -88,5 +91,26 @@ void Vector::test4() {
 
 		cout << (*it)->name << endl;
 		cout << (*it)->age << endl;
+	}
+}
+
+void Vector::test5() {
+
+	Animal* dog = new Dog("Taro");
+	Animal* cat = new Cat;
+	Animal* pig = new Pig;
+
+	dog->setName("Hana");
+	cat->setName("Ai");
+	pig->setName("Ken");
+
+	vector<Animal*> animals;
+	animals.push_back(dog);
+	animals.push_back(cat);
+	animals.push_back(pig);
+
+	for (vector<Animal*>::iterator it = animals.begin(); it != animals.end(); ++it) {
+
+		cout << (*it)->getName() << endl;
 	}
 }

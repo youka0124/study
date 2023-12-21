@@ -30,6 +30,12 @@ int main() {
 
 	cout << endl;
 
+	cout << "Vector::test5()" << endl;
+
+	vector->test5();
+
+	cout << endl;
+
 	General* general = new General;
 
 	cout << "General::test1()" << endl;
